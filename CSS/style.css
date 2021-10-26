@@ -1,0 +1,156 @@
+:root{
+    --azul:#0F044C;
+    --blanco:#fff;
+    --fuentePrincipal: 'Montserrat Alternates', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*Hack para Box model*/
+    background-color: #ffffff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family:  'Montserrat Alternates', sans-serif;
+    font-size: 16px; /*1 rem = 10px*/
+    background-image: url(https://www.wallpaperuse.com/wallp/8-89463_m.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+    margin: unset;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+a:hover{
+    cursor: pointer;
+    color: coral;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* NAVEGACIÓN */
+
+.nav_bg{
+    background-color: #fff;
+}
+
+.navegacion_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.navegacion_principal a{
+    font-weight: bold;
+    color: black;
+}
+
+.navegacion_principal a:hover{
+    color: coral;
+}
+
+.contenedor_imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.imagen{
+    width: 30rem;
+}
+
+.titulo{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+/* FORMULARIO */
+.contenedor_form{
+    max-width: 50%;
+    /* background-image: url(https://www.xtrafondos.com/wallpapers/montanas-minimalista-degradado-azul-7869.jpg); */
+    background-size: cover;
+    border-radius: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.campo{
+    margin-bottom: 3rem;
+}
+
+.campo label{
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.formulario{
+    background-color:transparent;
+    width: min(80rem, 100%);
+    padding: 0 2rem;
+    border-radius: 1rem;
+}
+
+.boton_formulario{
+    padding: 0.5rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-color:  128, 139, 150;
+    width: 10rem;
+}
+
+.boton_formulario:hover{
+    cursor: pointer;
+    color:  #e74c3c;
+}
+
+/* Footer */
+.footer_bg{
+    background-color: #fff ;
+}
+
+.footer{
+    text-align: center;
+    color:black;
+    padding: .5rem;
+}
+
+.footer p{
+    margin: unset;
+}

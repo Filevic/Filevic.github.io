@@ -1,0 +1,164 @@
+:root{
+    --azul:#0F044C;
+    --blanco:#fff;
+    --fuentePrincipal: 'Montserrat Alternates', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*Hack para Box model*/
+    background-color: #ffffff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family:  'Montserrat Alternates', sans-serif;
+    font-size: 16px; /*1 rem = 10px*/
+    background-image: url(http://abeecms-prod.beeapi.net/131/92ea8158-b14c-4a25-929d-6afbd6984d3d);
+    background-size: cover;
+}
+
+h1, h2, h3, p {
+    margin: unset;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover{
+    cursor: pointer;
+    color:#FA8072;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    padding: 1rem;
+    background-color: var(--blanco);
+    /* background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-blue-minimalist-geometric-block-image_178413.jpg);
+    background-position-y: 26rem;  */
+}
+
+.header span{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--azul);
+    font-style: oblique;
+}
+
+.logo{
+    width: 10rem;
+    height: 7rem;
+    padding: 1rem;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* NAVEGACIÓN */
+
+.nav_bg{
+    background-color: var(--azul);
+}
+
+.navegacion_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.navegacion_principal a{
+    font-weight: bold;
+    color: white
+}
+
+.navegacion_principal a:hover{
+    color: #FA8072;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+/* FORMULARIO */
+.contenedor_busqueda{
+    max-width: 90%;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.campo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 3rem;
+}
+
+.campo label{
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.input-text{
+    width: 95%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgba(182, 182, 182, 0.933);
+}
+
+.formulario{
+    background-color:transparent;
+    width: min(90rem, 100%);
+    padding: 0 2rem;
+    border-radius: 1rem;
+}
+
+.boton_formulario{
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    border-radius: 1rem;
+    background-color:  128, 139, 150;
+    width: 10rem;
+}
+
+.boton_formulario:hover{
+    cursor: pointer;
+    color:  #FA8072;
+}
+
+
+/* Footer */
+.footer_bg{
+    background-color: var(--azul) ;
+}
+
+.footer{
+    text-align: center;
+    color:white;
+    padding: .5rem;
+}
+
+.footer p{
+    margin: unset;
+}
