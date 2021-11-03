@@ -1,0 +1,131 @@
+:root{
+    --azul:#0F044C;
+    --blanco:#fff;
+    --fuentePrincipal: 'Montserrat Alternates', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*Hack para Box model*/
+    background-color: #ffffff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family:  'Montserrat Alternates', sans-serif;
+    font-size: 16px; /*1 rem = 10px*/
+    background-image: url(http://abeecms-prod.beeapi.net/131/92ea8158-b14c-4a25-929d-6afbd6984d3d);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1, h2, h3 {
+    margin: unset;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color: coral;
+}
+/* HEADER */
+
+.header{
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    padding: 1rem;
+    background-color: var(--blanco);
+}
+
+.header span{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--azul);
+    font-style: oblique;
+}
+
+.logo{
+    width: 10rem;
+    height: 7rem;
+    padding: 1rem;
+}
+.header p{
+    margin: unset;
+}
+
+
+/* NAVEGACIÓN */
+
+.nav_bg{
+    background-color: var(--azul);
+}
+
+.navegacion_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.navegacion_principal a{
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navegacion_principal a:hover{
+    color: coral;
+}
+
+.contenedor_imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.imagen{
+    width: 30rem;
+}
+
+.titulo{
+    color: #440080;
+}
+
+
+.central{
+    margin: auto;
+    height:100%;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+/* Footer */
+.footer_bg{
+    background-color: var(--azul) ;
+    margin-top: 2rem;
+}
+
+.footer{
+    text-align: center;
+    color:white;
+    padding: .5rem;
+}
+
+.footer p{
+    margin: unset;
+}
