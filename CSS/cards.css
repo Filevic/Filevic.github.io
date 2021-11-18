@@ -1,0 +1,38 @@
+
+a:hover{
+  color: var(--rosa);
+}
+
+
+/** Seccion de tesis**/
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem;
+}
+
+/*Tarjetas*/
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.25s;
+    background-color: antiquewhite;
+}
+
+.tarjeta:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta img{
+    padding-top: 1rem;
+}
+
+.tarjeta h3, p{
+  padding: 1rem;
+}
