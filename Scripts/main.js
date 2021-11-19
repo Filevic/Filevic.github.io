@@ -18,12 +18,14 @@ const llamarAPI = async () => {
  const generarTarjeta = ({authors, director,name,resume,school}) => {
      return    `   
      <section class="tarjeta">
+         <div class="top-tarjeta">
+             <h2>${name}</h2>
+         </div>    
          <div class="bottom-tarjeta">
-             <h3>${name}</h3>
-             <p>${authors}</p>
-             <p>${director}</p>
-             <p>${resume}</p>
-             <p>${school}</p>
+             <p><b>Autor(es):</b> ${authors}</p>
+             <p><b>Director:</b>${director}</p>
+             <p><b>Resumen:</b><br>${resume}</p>
+             <p><b>Escuela:</b>${school}</p>
          </div>
      </section>
      `

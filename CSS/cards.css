@@ -7,7 +7,7 @@ a:hover{
 /** Seccion de tesis**/
 #contenedor{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     padding: 4rem;
 }
@@ -19,7 +19,6 @@ a:hover{
     align-items: center;
     border-radius: 1rem;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
     transition: all 0.25s;
     background-color: antiquewhite;
 }
@@ -34,5 +33,8 @@ a:hover{
 }
 
 .tarjeta h3, p{
-  padding: 1rem;
+  padding: 0.3rem;
+}
+.top-tajteta{
+  text-align: center;
 }

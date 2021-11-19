@@ -97,7 +97,7 @@ a:hover{
 }
 
 .imagen{
-    width: 30rem;
+    width: 40rem;
 }
 
 .titulo{
@@ -168,11 +168,15 @@ a:hover{
     flex-direction:row;
     justify-content: center;
 }
+.tarjeta h2{
+    color: #0581d3;
+}
 
 .imager img{
     height:70%;
     width:70%;
-    margin: 2.5rem;
+    margin-left: 3.5rem;
+    margin-top: 3rem;
 }
 .busqueda-avamzada a{
     position:fixed;
