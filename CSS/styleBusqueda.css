@@ -96,6 +96,18 @@ a:hover{
 }
 
 /* FORMULARIO */
+.icon{
+    font-size: 3rem;
+    padding: .5rem;
+    border-radius: 30%;
+}
+
+.icon:hover{
+    transition: 0.3s ;
+    transform: translateY(-1rem);
+    box-shadow: 0 0 5px rgba(17, 17, 17, 0.844);
+}
+
 .contenedor_busqueda{
     max-width: 90%;
 }
