@@ -1,0 +1,178 @@
+/* Variables */
+:root{
+  --azul:#0F044C;
+  --azulclaro:#1597E5 ;
+  --blanco:#fff;
+  --fuentePrincipal: 'Montserrat Alternates', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*Hack para Box model*/
+  background-color: #ffffff;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+header{
+  background-color: var(--blanco);
+  width: 100%;
+  height: 5rem;
+  padding: .8rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.container{
+  display: flex;
+  justify-content:space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+.area-izq{
+  display: flex;
+  column-gap: 10px;
+}
+
+.area-izq h3{
+  width: 100px;
+  color: black;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  padding:5px;
+}
+
+.area-izq span{
+  color: var(--azulclaro);
+}
+
+.area-izq img{
+  width: 40px;
+  height: 40px;
+}
+
+.area-der label #btn-sidebar{
+  z-index: 1;
+  cursor: pointer;
+  font-size: 23px;
+  transition: .5s;
+  transition-property:all;
+}
+
+.area-der label #btn-sidebar:hover{
+  color: var(--azulclaro);
+}
+
+.area-der i{
+  padding-top: 3px;
+  margin-right: 5px;
+}
+
+.sidebar{
+  padding-top: 8rem ;
+  background: #e2e2e2;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: .5s;
+  transition-property: left;
+}
+
+.sidebar .perfil-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar h4{
+  color: black;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+  line-height: 4;
+  transition: .5s;
+  transition-property: all;
+  font-size: 1.5rem;
+}
+
+.sidebar a:hover{
+  color: var(--azulclaro);
+  background: rgba(64, 218, 210, .1);
+  border-left: solid;
+}
+
+.sidebar i{
+  margin-right: 15px;
+}
+
+#check:checked ~ .sidebar{
+  left: -180px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a {
+  margin-left: 200px;
+  max-width: 100%;
+}
+
+#check:checked ~ .sidebar a:hover{
+  border-left: none;
+  background-color: rgba(33 ,33 , 33, .1);
+  color: var(--azulclaro);
+}
+
+.content{
+  margin-left: 13rem;
+  background: url(http://abeecms-prod.beeapi.net/131/92ea8158-b14c-4a25-929d-6afbd6984d3d);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: .5s;
+  padding-top: 8rem;
+  padding-left: 15rem;
+
+}
+
+#check:checked ~ .content{
+  margin-left: -60px;
+}
+
+#check{
+  display: none;
+}
+ 
+.content-imagen{
+  max-width: 120rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-imagen img{
+  opacity: .3;
+}
