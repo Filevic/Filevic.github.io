@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="" >
     <link rel="stylesheet" href="../CSS/normalice.css" >
-    <link rel="stylesheet" href="../CSS/styleBusqueda.css" >
+    <link rel="stylesheet" href="../CSS/styleBusqueda.css">
+    <link rel="stylesheet" href="../CSS/cards.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>SAPHYENTIA</title>
 </head>
@@ -36,47 +37,59 @@
         </div>
 
         <div class="contenedor contenedor_busqueda">
-            <form class="formulario">
+            <form class="formulario" name="Busqueda" action="GET">
               <fieldset>
                 <div class="campo">
                     <label>Titulo</label>
-                    <input class="input-text" type="text" placeholder="Escriba el titulo">  
+                    <input class="input-text" type="text" placeholder="Escriba el titulo" id="nombre">  
                 </div>
 
                 <div class="campo">
-                    <label>Autor</label>
-                    <input class="input-text" type="text" placeholder="Escriba el Autor">  
+                    <label>Año</label>
+                    <input class="input-text" type="text" placeholder="Escriba el Año" id="anio">  
                 </div>
 
                 <div class="campo">
-                    <label>Unidad </br>Academica</label>
-                    <input class="input-text" type="text" placeholder="Escriba la Unidad Academica">  
+                    <label>Etiquetas</label>
+                    <input class="input-text" type="text" placeholder="Escriba las etiquetas de la tesis" id="etiquetas">  
                 </div>
 
                 <div class="campo">
-                    <label>Director</label>
-                    <input class="input-text" type="text" placeholder="Escriba el director de tesis">  
+                    <label>IdTesis</label>
+                    <input class="input-text" type="text" placeholder="Escriba el ID de la Tesis" id="idTesis">  
                 </div>
 
                 <div class="campo">
-                    <label>Palabras Clave</label>
-                    <textarea class="input-text" placeholder="Escriba las palabras claves relacionadas a su busqueda"></textarea>
+                    <label>Escuela</label>
+                    <input class="input-text" type="text" placeholder="Escriba la escuela de origen" id="escuela">  
+                </div>
+
+                <div class="campo">
+                    <label>Estatus</label>
+                    <input class="input-text" type="text" placeholder="Escriba el estatus de la Teis" id="estado">  
+                </div>
+
+                <div class="campo">
+                    <label>Resumen</label>
+                    <input class="input-text" type="text" placeholder="Escriba un breve resumen de la tesis" id="resumen">  
                 </div>
 
                 <div class="campo centrar_boton">
                     <label></label>
                     <div>
-                        <button class="boton_formulario">Buscar</button>
-                        <button class="boton_formulario">Cancelar</button>
-                    </div>
-                    
+                        <input type="button" class="boton_formulario" value="Buscar" onclick="llamarAPI()"/>
+                        <button type="reset" class="boton_formulario">Restablecer Busqueda</button>
+                        <input type="button" class="boton_formulario" value="Limpiar resultados" onclick="limpiarResultados()"/>
+                    </div>    
                 </div>
+
               </fieldset>
+
             </form>
         </div>
 
 
-
+        <section id="caja" class="contenedor"></section>
         
 
     </main>
@@ -88,6 +101,8 @@
         </div>
         
     </footer>
+
+    <script src="../Scripts/captura_datos.js" async></script>
     
 </body>
 </html>
