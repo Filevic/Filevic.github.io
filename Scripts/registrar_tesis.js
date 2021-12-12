@@ -45,6 +45,21 @@ function sent_data(){
     })
     .then((res ) => res.json())
     .catch(error => console.error('Error: ',error))
-    .then(response => console.log('Success: ', response));
+    .then(response => {
+        console.log('Success: ', response)
+        const respuesta= response['success'];
+        if (respuesta == false){
+            swal("Error!", response['error'], "error");
+        }else{
+            const array = response['result']; 
+            swal({
+                icon: 'success',
+                title: 'Tesis registrada con éxito',
+                text: array.name,
+                timer: 2000
+            })
+            setTimeout( () => { window.location.replace("../index.html") }, 1000);
+        }
+    });
 
 }
