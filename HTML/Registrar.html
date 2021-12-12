@@ -28,31 +28,31 @@
                 <fieldset>
                     <div class="contenedor_campos">
                         <div class="campo">
-                            <label>Nombre</label>
-                            <input required class="input-text" type="text" placeholder="Usuario">
-                        </div>
-
-                        <div class="campo">
-                            <label>Apellido</label>
-                            <input required class="input-text" type="text" placeholder="Apellido">
-                        </div>
-
-                        <div class="campo">
                             <label>Número Boleta</label>
-                            <input required class="input-text" type="text" placeholder="Boleta">
+                            <input required class="input-text" type="text" placeholder="Boleta" name="boleta" id="boleta">
+                        </div>
+
+                        <div class="campo">
+                            <label>Nombre completo</label>
+                            <input required class="input-text" type="text" placeholder="Nombre" name="nombre" id="nombre">
                         </div>
 
                         <div class="campo">
                             <label>Correo Electronico</label>
-                            <input required class="input-text" type="email" placeholder="E-mail">
+                            <input required class="input-text" type="email" placeholder="E-mail" name="correo" id="correo">
+                        </div>
+
+                        <div class="campo">
+                            <label>Tipo de usuario</label>
+                            <input required class="input-text" type="text" placeholder="Usuario" name="tipo" id="tipo">
                         </div>
 
                         <div class="campo">
                             <label>Contraseña</label>
-                            <input required class="input-text" type="password" placeholder="Password">
+                            <input required class="input-text" type="password" placeholder="Password" name="password" id="password">
                         </div>
                         <div class="campo">
-                            <button class="boton_formulario">Enviar</button>
+                            <input class="boton_formulario" type="text" value="Registrar" onclick="sent_data()"/>
                          </div>
                 </fieldset>
             </form>
@@ -62,6 +62,7 @@
 
     </main>
     
+    <section id="contenedor"></section>
 
 
     <footer class="footer_bg">
@@ -71,5 +72,7 @@
         
     </footer>
     
+    <script src="../Scripts/registrar_usuario.js" async></script>
+
 </body>
 </html>

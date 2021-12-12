@@ -15,20 +15,25 @@ const llamarAPI = async () => {
 //Y a nosotros solo nos interesan dos propiedades que son las que estamos solicitando
 //en la funcion
 
- const generarTarjeta = ({authors, director,name,resume,school}) => {
-     return    `   
-     <section class="tarjeta">
-         <div class="top-tarjeta">
-             <h2>${name}</h2>
-         </div>    
-         <div class="bottom-tarjeta">
-             <p><b>Autor(es):</b> ${authors}</p>
-             <p><b>Director:</b>${director}</p>
-             <p><b>Resumen:</b><br>${resume}</p>
-             <p><b>Escuela:</b>${school}</p>
-         </div>
-     </section>
-     `
-} 
+const generarTarjeta = ({authors, director,name,resume,school,year,thesisId,status,statusMessage,pdfRoute}) => {
+    return    `   
+    <section class="tarjeta">
+        <div class="top-tarjeta">
+            <h2>${name}</h2>
+        </div>    
+        <div class="bottom-tarjeta">
+            <p><b>Autor(es): </b> ${authors}</p>
+            <p><b>Director: </b>${director}</p>
+            <p><b>Resumen: </b><br>${resume}</p>
+            <p><b>Escuela: </b>${school}</p>
+            <p><b>Identificador de la tesis: </b>${thesisId}</p>
+            <p><b>Año: </b>${year}</p>
+            <p><b>Estado: </b>${status}</p>
+            <p><b>Detalles: </b>${statusMessage}</p>
+            <p><b>Enlace: </b>${pdfRoute}</p>
+        </div>
+    </section>
+    `
+}
 
 llamarAPI()

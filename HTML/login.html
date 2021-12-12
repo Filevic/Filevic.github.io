@@ -29,20 +29,20 @@
 
 
         <div class="contenedor contenedor_form">
-            <form class="formulario">
+            <form class="formulario" action="POST">
                 <fieldset>
                     <div class="contenedor_campos">
                         <div class="campo">
-                            <label>Usuario</label>
-                            <input required class="input-text" type="text" placeholder="Usuario">
+                            <label>Usuario o Boleta</label>
+                            <input required class="input-text" type="text" placeholder="Usuario" name="boleta" id="boleta">
                         </div>
 
                         <div class="campo">
                             <label>Contraseña</label>
-                            <input required class="input-text" type="password" placeholder="Password">
+                            <input required class="input-text" type="password" placeholder="Password" name="password" id="password">
                         </div>
                         <div class="campo">
-                            <button class="boton_formulario">Entrar</button>
+                            <input class="boton_formulario" value="Entrar" onclick="sent_data()"/>
                          </div>
                 </fieldset>
             </form>
@@ -54,6 +54,8 @@
         </div>
 
     </main>
+
+    <section id="contenedor"></section>
     
 
     <footer class="footer_bg">
@@ -62,6 +64,10 @@
         </div>
         
     </footer>
+
+    <script src="../Scripts/login.js" async></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
 </body>
 </html>

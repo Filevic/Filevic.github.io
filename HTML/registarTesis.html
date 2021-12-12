@@ -74,40 +74,72 @@
 
             <form class="formulario">
                  <div class="titulo">
-                     <h1>Registar tesis Tesis</h1>
+                     <h1>Registar Tesis</h1>
                  </div>
 
               <fieldset>
                 <div class="campo">
-                    <label>Titulo</label>
-                    <input required class="input-text" type="text" placeholder="Escriba el titulo">  
+                    <label>ID de la tesis</label>
+                    <input required class="input-text" type="text" placeholder="Escriba el ID" name="identificador" id="identificador">  
                 </div>
 
                 <div class="campo">
-                    <label>Autor / Autores</label>
-                    <input required class="input-text" type="text" placeholder="Escriba el Autor y/o Autores">  
+                    <label>Titulo</label>
+                    <input required class="input-text" type="text" placeholder="Escriba el titulo" name="titulo" id="titulo">  
                 </div>
 
                 <div class="campo">
                     <label>Año de realización</label>
-                    <input required class="input-text" type="datetime-local">  
+                    <input required class="input-text" type="text" placeholder="Escriba el año de publicación" name="anio" id="anio">  
+                </div>
+
+                <div class="campo">
+                    <label>Etiquetas</label>
+                    <input required class="input-text" type="text" placeholder="Escriba las etiquetas que describan el tema de la tesis" name="etiquetas" id="etiquetas">  
                 </div>
 
                 <div class="campo">
                     <label>Escuela de Procedencia</label>
-                    <input required class="input-text" type="text" placeholder="Escriba la escuela de procedencia ">  
+                    <input required class="input-text" type="text" placeholder="Escriba la escuela de procedencia " name="escuela" id="escuela">  
                 </div>
 
                 <div class="campo">
-                    <label>Director / Directores de Tesis</label>
-                    <input required class="input-text" type="text" placeholder="Escriba los directores de tesis ">  
+                    <label>Resumen</label>
+                    <input required class="input-text" type="text" placeholder="Escriba un breve resumen de la tesis" name="resumen" id="resumen">  
+                </div>
+
+                <div class="campo">
+                    <label>Enlace de la tesis</label>
+                    <input required class="input-text" type="text" placeholder="Aquí estaría la url de la tesis ... si la tubiera" name="route" id="route">  
+                </div>
+
+                <div class="campo">
+                    <label>Estatus</label>
+                    <input required class="input-text" type="text" placeholder="Indique el estado de la tesis" name="estado" id="estado">  
+                </div>
+
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <input required class="input-text" type="text" placeholder="indique las anotaciones para la tesis" name="mensaje" id="mensaje">  
                 </div>
 
                 <div class="campo">
                     <label>Sinodal / Sinodales Procedencia</label>
-                    <input required class="input-text" type="text" placeholder="Escriba los sinodales de tesis">  
+                    <input required class="input-text" type="text" placeholder="Escriba los sinodales de tesis" name="sinodal" id="sinodal">  
                 </div>
+
+                <div class="campo">
+                    <label>Director / Directores de Tesis</label>
+                    <input required class="input-text" type="text" placeholder="Escriba los directores de tesis" name="director" id="director">  
+                </div>
+
+                <div class="campo">
+                    <label>Autor / Autores</label>
+                    <input required class="input-text" type="text" placeholder="Escriba el Autor y/o Autores" name="autores" id="autores">  
+                </div>
+
                         <button class="boton_formulario">Enviar</button>
+                        <input class="boton_formulario" type="text" value="Enviar" onclick="sent_data()"/>
                         <button class="boton_formulario">Cancelar</button>
                     </div>
                     
@@ -115,10 +147,6 @@
               </fieldset>
             </form>
         </div>
-
-
-
-        
 
     </main>
     
@@ -129,6 +157,8 @@
         </div>
         
     </footer>
+
+    <script src="../Scripts/registrar_tesis.js" async></script>
     
 </body>
 </html>
